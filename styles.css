@@ -1,1 +1,35 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Light"), url("./fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Regular"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archangelsk";
+  src: local("Archangelsk"), url("./fonts/Archangelsk.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=styles.css.map */
