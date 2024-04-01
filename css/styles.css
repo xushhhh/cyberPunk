@@ -6,27 +6,23 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto-Light'), url('./fonts/Roboto-Light.ttf') format('truetype');
+  font-family: "Roboto";
+  src: local("Roboto-Light"), url("./fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto-Regular'),
-    url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: local("Roboto-Regular"), url("./fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Archangelsk';
-  src: local('Archangelsk'), url('./fonts/Archangelsk.ttf') format('truetype');
+  font-family: "Archangelsk";
+  src: local("Archangelsk"), url("./fonts/Archangelsk.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -42,22 +38,22 @@
   --bg-item: #000;
   --yellow: #f8f200;
   --blue-text: #52bedc;
-
-  //endpoints
-
   --mobile: 300px;
   --tablet: 1024px;
   --desctop: 1920px;
 }
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 .container {
   max-width: var(--mobile);
   width: 100%;
   margin: 0 auto;
   padding: 0 12px;
 }
+
 .header {
   background-image: url(../images/hheadmobile.jpg);
   min-height: 750px;
@@ -67,6 +63,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .nav {
   width: 100%;
   margin: 0%;
@@ -74,18 +71,15 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-
-  &__icons {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-
-    align-items: center;
-  }
 }
+.nav__icons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  align-items: center;
+}
+
 .square {
-  //   min-width: 320px;
-  //   width: 100%;
   background-color: var(--yellow);
   padding: 30px;
   display: flex;
@@ -93,18 +87,18 @@ body {
   align-items: center;
   gap: 50px;
   margin-bottom: -50px;
-  clip-path: polygon(15% 1%, 100% 0, 100% 85%, 88% 100%, 0% 100%, 0% 15%);
-
-  &__title {
-    font-family: 'Archangelsk';
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    color: var(--text-primary);
-  }
-  &__btn {
-    padding: 10px 50px;
-    background-color: var(--bg-item);
-    color: var(--yellow);
-  }
+  -webkit-clip-path: polygon(15% 1%, 100% 0, 100% 85%, 88% 100%, 0% 100%, 0% 15%);
+          clip-path: polygon(15% 1%, 100% 0, 100% 85%, 88% 100%, 0% 100%, 0% 15%);
 }
+.square__title {
+  font-family: "Archangelsk";
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--text-primary);
+}
+.square__btn {
+  padding: 10px 50px;
+  background-color: var(--bg-item);
+  color: var(--yellow);
+}/*# sourceMappingURL=styles.css.map */
