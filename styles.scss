@@ -57,6 +57,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 12px;
+
+  @media (min-width: 1020px) {
+    padding: 0 100px;
+    width: 60%;
+    max-width: 1920px;
+  }
 }
 .header {
   background-image: url(../images/hheadmobile.jpg);
@@ -66,8 +72,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 500px) {
+    background-image: url(./images/hheadmobile.jpg);
+  }
+  @media (min-width: 780px) {
+    background-image: url(./images/hheadmobile.jpg);
+  }
 }
 .nav {
+  padding-top: 20px;
   width: 100%;
   margin: 0%;
   display: flex;
@@ -75,14 +89,43 @@ body {
   gap: 10px;
   align-items: center;
 
-  &__icons {
+  @media (min-width: 780px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__links {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
-
+    //min-width:300px;
+    width: 100%;
     align-items: center;
+
+    @media (min-width: 500px) {
+      width: 65%;
+    }
+  }
+  @media (min-width: 780px) {
+  }
+
+  &__logo {
+    width: 200px;
+    height: 75px;
+  }
+
+  @media (min-width: 780px) {
+    width: 300px;
+    height: 75px;
   }
 }
+
+&__icons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  align-items: center;
+}
+
 .square {
   //   min-width: 320px;
   //   width: 100%;
@@ -94,17 +137,39 @@ body {
   gap: 50px;
   margin-bottom: -50px;
   clip-path: polygon(15% 1%, 100% 0, 100% 85%, 88% 100%, 0% 100%, 0% 15%);
-
-  &__title {
-    font-family: 'Archangelsk';
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    color: var(--text-primary);
+  margin-left: auto;
+  @media (max-width: 780px) {
+    max-width: 624px;
+    height: auto;
+    padding: 70px;
+    width: 100%;
+    margin-right: 36px;
+    margin-bottom: 0;
   }
-  &__btn {
-    padding: 10px 50px;
-    background-color: var(--bg-item);
-    color: var(--yellow);
+}
+
+&__title {
+  font-family: 'Archangelsk';
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--text-primary);
+  \ @media(min-width: 780px;) {
+    font-style: 62px;
+    text-align: left;
+  }
+}
+
+&__btn {
+  padding: 10px 50px;
+  background-color: var(--bg-item);
+  color: var(--yellow);
+  font-weight: 700;
+  font-style: 20px;
+  line-height: 200%;
+
+  @media (min-width: 780px) {
+    font-size: 24px;
+    width: 290px;
   }
 }
