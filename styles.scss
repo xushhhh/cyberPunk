@@ -72,6 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 120px;
 
   @media (min-width: 500px) {
     background-image: url(./images/hheadmobile.jpg);
@@ -171,5 +172,43 @@ body {
   @media (min-width: 780px) {
     font-size: 24px;
     width: 290px;
+  }
+}
+.info{
+margin-bottom: 120px;
+  &__title{
+    font-weight: 30px;
+    color: var(--text-primary);
+    font-family:"Archangelsk";
+    margin-bottom: 25px;
+  }
+
+  &__desc{
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 200%;
+    color: var(--text-secondary );
+  }
+}
+
+
+
+
+
+
+.text-blue{
+  font-weight: 700;
+  color: var(--blue-text);
+}
+.images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+
+  & img {
+    object-fit: cover;
+    width: 100%;
   }
 }
