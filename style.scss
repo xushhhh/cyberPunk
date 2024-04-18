@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto-Light'), url('./fonts/Roboto-Light.ttf') format('truetype');
+  src: local('Roboto-Light'), url('../fonts/Roboto-Light.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
 }
@@ -8,14 +8,14 @@
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto-Regular'),
-    url('./fonts/Roboto-Regular.ttf') format('truetype');
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Archangelsk';
-  src: local('Archangelsk'), url('./fonts/Archangelsk.ttf') format('truetype');
+  src: local('Archangelsk'), url('../fonts/Archangelsk.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
 }
@@ -293,7 +293,7 @@ body {
     display: block;
     width: 100%;
     height: 70px;
-    background-image: url(./images/formbottom.jpg);
+    background-image: url(../images/formbottom.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,9 +314,20 @@ body {
     margin-bottom: 70px;
   }
 }
+
+.form-images{
+  margin-top: 25px;
+
+  @media(min-width: 768px){
+    display: flex;
+    flex-direction: column;
+   
+  }
+}
 form{
     color: #fff;
     padding-bottom: 30px;
+
 }
 label{
     color: #fff;
@@ -388,6 +399,7 @@ opacity: 0.8;
     font-weight: 300;
     font-size: 12px;
     color: #fff;
+    position: relative;
 }
 
 .checkbox + label::before{
@@ -403,7 +415,7 @@ opacity: 0.8;
 .checkbox + label::after{
     content: "";
     display: block;
-    background-image: url(./images/tick.svg);
+    background-image: url(../images/tick.svg);
     background-position: center;
     background-size: cover;
     width: 9px;
@@ -411,4 +423,34 @@ opacity: 0.8;
     position: absolute;
     left: -19px;
     top: 1px;
+}
+.wrapper{
+  margin-top: 25px;
+  position: relative;
+  color: #000;
+
+
+  @media(min-width: 768px){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.sale{
+  background-image: url(../images/sale.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  color: #000;
+}
+
+.form-desc{
+  @media(min-width: 768px){
+  max-width: 460px;
+  }
 }
