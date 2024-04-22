@@ -275,6 +275,7 @@ body {
   background-color: var(--bg-item);
   padding-top: 80px;
   position: relative;
+  margin-bottom: 100px;
 }
 .form::before {
   content: "";
@@ -518,4 +519,27 @@ label {
   .form-desc {
     max-width: 460px;
   }
+}
+
+.display {
+  background-color: var(--yellow);
+  padding-top: 100px;
+}
+.displayicons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.displayicons img:nth-child(1) {
+  width: 44px;
+  height: 44px;
+}
+.displayicons img:nth-child(2) {
+  width: 11px;
+  height: 50px;
+}
+.displayicons img:nth-child(3) {
+  width: 176x;
+  height: 44px;
 }/*# sourceMappingURL=style.css.map */
